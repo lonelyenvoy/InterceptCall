@@ -9,8 +9,6 @@ public class OutCallReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // TODO: This method is called when the BroadcastReceiver is receiving
-        // an Intent broadcast.
         String outCallNumber = getResultData();
         if (outCallNumber != null) {
             SharedPreferences sharedPreferences = context.getSharedPreferences("config", Context.MODE_PRIVATE);
